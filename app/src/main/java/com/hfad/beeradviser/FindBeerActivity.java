@@ -14,8 +14,7 @@ public class FindBeerActivity extends Activity{
         setContentView(R.layout.activity_find_beer);
     }
     //Call when user clicks the button
-    public void onClickFindBeer(V        android:id="@+id/find_beer"
-iew view){
+    public void onClickFindBeer(View view){
         TextView brands=(TextView) findViewById(R.id.brands);
         Spinner color=(Spinner) findViewById(R.id.color);
         String beerType=String.valueOf(color.getSelectedItem());
