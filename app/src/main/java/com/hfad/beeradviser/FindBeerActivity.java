@@ -18,7 +18,11 @@ public class FindBeerActivity extends Activity{
         TextView brands=(TextView) findViewById(R.id.brands);
         Spinner color=(Spinner) findViewById(R.id.color);
         String beerType=String.valueOf(color.getSelectedItem());
-        brands.setText(beerType);
+        if(beerType.equals("Brown")){
+            brands.setText("Crown lager\nSt Etienne\nBecks");
+        }else if(beerType.equals("Light")){
+            brands.setText("Corona\nTooheys");
+        }
 
     }
 }
